@@ -16,6 +16,10 @@ function HttpsProxy(host, relations) {
         },
         secure: true,
       });
+      server.on("error", function(err, req, res) {
+        console.error(err);
+        res.end("Error: " + err);
+      });
       server.listen(relation.from);
       this.servers.push(server);
     }
