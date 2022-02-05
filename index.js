@@ -9,12 +9,12 @@ function HttpsProxy(host, relations) {
       const server = httpProxy.createServer({
         target: `http://localhost:${relation.to}`,
         ssl: {
-          key: fs.readFileSync("/etc/letsencrypt/live/yoshikai.net/privkey.pem"),
-          cert: fs.readFileSync("/etc/letsencrypt/live/yoshikai.net/fullchain.pem")
+          key: fs.readFileSync(`/etc/letsencrypt/live/${host}/privkey.pem`),
+          cert: fs.readFileSync(`/etc/letsencrypt/live/${host}/fullchain.pem`)
         },
         secure: true,
       });
-      server.listen(relations.from);
+      server.listen(relation.from);
       this.servers.push(server);
     }
   }
