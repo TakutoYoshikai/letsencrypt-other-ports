@@ -2,7 +2,7 @@ const httpProxy = require("http-proxy");
 const fs = require("fs");
 const cron = require("node-cron");
 
-function startHttpsProxy(host, relations) {
+function HttpsProxy(host, relations) {
   this.servers = [];
   this.start = function() {
     for (const relation of relations) {
@@ -40,3 +40,4 @@ function startHttpsProxy(host, relations) {
 }
 
 
+module.exports = HttpsProxy;
