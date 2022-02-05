@@ -39,5 +39,19 @@ function HttpsProxy(host, relations) {
   }
 }
 
-
-module.exports = HttpsProxy;
+if (require.main == module) {
+  const host = process.argv[2];
+  const from = parseInt(process.argv[3]);
+  const to = parseInt(process.argv[4]);
+  
+  const proxy = new HttpsProxy(host, [
+    {
+      from,
+      to,
+    }
+  ]);
+  proxy.start();
+  proxy.registerCron("0 0 1 * *");
+} else {
+  module.exports = HttpsProxy;
+}
