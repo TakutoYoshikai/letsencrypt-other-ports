@@ -41,6 +41,7 @@ proxy.registerCron("0 0 1 * *");
 
 **command**
 ```bash
+npm install -g TakutoYoshikai/letsencrypt-other-ports
 # https://example.com:8080 -> http://example.com:8081
 lop example.com 8080 8081
 ```
