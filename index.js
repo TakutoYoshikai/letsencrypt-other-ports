@@ -12,7 +12,7 @@ function HttpsProxy(host, relations) {
           key: fs.readFileSync("/etc/letsencrypt/live/yoshikai.net/privkey.pem"),
           cert: fs.readFileSync("/etc/letsencrypt/live/yoshikai.net/fullchain.pem")
         },
-        secure
+        secure: true,
       });
       server.listen(relations.from);
       this.servers.push(server);
