@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const httpProxy = require("http-proxy");
 const fs = require("fs");
 const cron = require("node-cron");
