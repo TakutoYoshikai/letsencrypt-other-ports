@@ -4,7 +4,7 @@ This is a reverse proxy to use other ports than 80, 443 with let's encrypt. You 
 ### Requirements
 * Linux
 * Node.js
-* Downloaded Let's encrypt certs.
+* Download Let's Encrypt certs.
 
 ### Usage
 **install**
