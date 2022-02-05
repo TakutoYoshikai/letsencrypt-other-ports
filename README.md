@@ -9,7 +9,7 @@ This is a reverse proxy to use other ports than 80, 443 with let's encrypt. You 
 ### Usage
 **install**
 ```bash
-npm install --save TakutoYoshikai/letsencrypt-other-ports
+npm install --save letsencrypt-other-ports
 ```
 
 **example**
