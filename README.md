@@ -1,5 +1,5 @@
 # letsencrypt-other-ports
-This is a reverse proxy to use other ports than 80, 443 with let's encrypt.
+This is a reverse proxy to use other ports than 80, 443 with let's encrypt. You can implement https communication quickly.
 
 ### Requirements
 * Linux
