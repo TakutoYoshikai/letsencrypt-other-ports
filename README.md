@@ -39,6 +39,11 @@ proxy.restart();
 proxy.registerCron("0 0 1 * *");
 ```
 
+**command**
+```bash
+# https://example.com:8080 -> http://example.com:8081
+lop example.com 8080 8081
+```
 
 ### License
 MIT License
