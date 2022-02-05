@@ -1,10 +1,10 @@
 # letsencrypt-other-ports
-This is a reverse proxy to use other ports than 80, 443 with let's encrypt.
+This is a reverse proxy to use other ports than 80, 443 with let's encrypt. You can implement https communication quickly.
 
 ### Requirements
 * Linux
 * Node.js
-* Downloaded Let's encrypt certs.
+* Download Let's Encrypt certs.
 
 ### Usage
 **install**
@@ -30,6 +30,10 @@ const proxy = new HttpsProxy("example.com", [
 ]);
 
 proxy.start();
+
+proxy.stop();
+
+proxy.restart();
 
 // cron to refresh cert
 proxy.registerCron("0 0 1 * *");
