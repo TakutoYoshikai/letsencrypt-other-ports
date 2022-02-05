@@ -1,0 +1,19 @@
+{
+  "name": "letsencrypt-other-ports",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "letsencrypt-other-ports": "./bin/letsencrypt-other-ports"
+  },
+  "dependencies": {
+    "http-proxy": "^1.18.1",
+    "node-cron": "^3.0.0"
+  }
+}
