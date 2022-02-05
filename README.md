@@ -31,6 +31,10 @@ const proxy = new HttpsProxy("example.com", [
 
 proxy.start();
 
+proxy.stop();
+
+proxy.restart();
+
 // cron to refresh cert
 proxy.registerCron("0 0 1 * *");
 ```
